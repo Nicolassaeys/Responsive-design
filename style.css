@@ -1,0 +1,31 @@
+
+body {display: flex;}
+
+.title1, .title2, .title3 {font-family: 'Bungee', cursive;}
+
+.p1, .p2, .p3 {font-family: 'Montserrat', sans-serif;}
+
+@media (max-width: 500px) { body {background-color: rgb(226, 161, 174);
+                                  font-size: 12px}}
+
+@media (min-width: 500px) and (max-width: 768px) { body {background-color: rgb(170, 219, 170);
+                                                         font-size: 16px;}}
+
+@media (min-width: 768px) { body {background-color: rgb(168, 182, 214);
+                                  font-size: 20px;}}
+
+@media (max-width: 500px) { body {flex-direction: column;}}
+
+@media (min-width: 500px) and (max-width: 768px) { body {flex-direction: row;
+flex-wrap: wrap;}
+.small {flex-basis: 2em;
+    flex-grow: 2;
+padding: 10px;}
+.medium {flex-basis: 1em;
+    flex-grow: 1;
+padding: 10px;}
+}
+
+@media (min-width: 768px) { body {flex-direction: row;
+    justify-content: space-between;
+}}
